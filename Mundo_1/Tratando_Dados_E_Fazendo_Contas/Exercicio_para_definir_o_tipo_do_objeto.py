@@ -1,0 +1,8 @@
+n1=input('Digite algo ')
+print(f'Seu tipo primitivo é: {type(n1)}')
+print(f'É numérico? {n1.isnumeric()}')
+print(f'É Alfabético? {n1.isalpha()}')
+print(f'É Alfanumérico? {n1.isalnum()}')
+print(f'Está todo em maiúsculo? {n1.isupper()}')
+print(f'Está todo em minúsculo? {n1.islower()}')
+print(f'É imprimível? {n1.isprintable()}')
