@@ -7,4 +7,4 @@ for palavra in range(len(palavras)):
     for vogal in range(len(vogais)):
         if vogais[vogal] in palavras[palavra]:
             contagem=palavras[palavra].count(vogais[vogal])
-            print(f'{vogais[vogal]}'*contagem,end=' ')
+            print(f'{vogais[vogal]}'*contagem,end='')
