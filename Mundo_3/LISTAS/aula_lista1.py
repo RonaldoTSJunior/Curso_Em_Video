@@ -37,6 +37,7 @@
 #----------------------------------------------------------------------------------------------------------
 a=[2,3,4,7]
 b=a
-b[2]=8
+b=a[:]                       # Utilizando o fatiamento, é possível adicionar somente uma cópia da lista A na variável B sem criar a ligação entre elas.
+b[2]=8                       # Quando igualo uma lista a outra, crio uma ligação entre duas listas. Então uma alteração feita em uma é feita na outra automaticamente. 
 print(f'Lista A: {a}')
 print(f'Lista B: {b}')
