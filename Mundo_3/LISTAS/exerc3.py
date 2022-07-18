@@ -17,5 +17,5 @@ else:
     print('O número 5 não está presente na lista!!')
 if escolha == 'n':
     numeros.sort(reverse=True)
-    print('Sua lista invertida ficou assim:\033[1,41m',numeros,'\033[m')
+    print('Sua lista invertida ficou assim:\033[0;31;m',numeros,'\033[m')
     print('A quantia de números digitados foi de:',contador)
