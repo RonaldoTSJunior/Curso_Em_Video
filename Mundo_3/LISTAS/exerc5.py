@@ -15,10 +15,11 @@ for simbolo in expressao:
         else:
             parenteses.append(')')
             break
+print('='*100)
 if len(parenteses)==0:
     print('EXPRESSÃO VÁLIDA! TODOS OS PARENTESES ESTÃO FECHADOS!')
 elif len(parenteses)!=0:
-    print('EXPRESSÃO INVÁLIDA! VERIFIQUE OS PARENTESES E TENTE NOVAMENTE.')
+    print('EXPRESSÃO INVÁLIDA! VERIFIQUE OS PARENTESES.')
 #================================EXERCICIO SEM LISTA====================================
 # expressao=input('Digite sua expressão: ').strip() 
 # parenteses_esquerda=0
