@@ -6,7 +6,7 @@ print('''
 ---------ANO NOVO!!!---------
     [CONTAGEM REGRESIVA...]
 ''')
-for c in range(10,-1,-1):
+for c in range(20,-1,-1):
     time.sleep(1)
     print(c)
 print(emoji.emojize(':fireworks:'))
