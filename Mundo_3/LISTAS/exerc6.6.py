@@ -40,7 +40,7 @@ while True:
     nota1=float(input('Digite a primeira nota: '))
     nota2=float(input('Digite a segunda nota: '))
     media=(nota1+nota2)/2
-    aluno.append([nome,[nota1,nota2],media])
+    aluno.append([nome,[nota1,nota2],media])                                  #Deste modo posso criar uma lista composta já pronta com todos os elementos dentro!
     escolha=str(input('Deseja adicionar mais alunos? [S/N]: ')).strip()
     if escolha in 'Nn':
         break
@@ -48,12 +48,12 @@ print('-='*30)
 print(f'{"N°":<4}{"NOME":<10}{"MEDIA":>8}')
 print('-'*26)
 for posicao, ficha in enumerate(aluno):
-    print(f'{posicao:<4}{ficha[0]:<10}{ficha[2]:>8.1f}')
+    print(f'{posicao:<4}{ficha[0]:<10}{ficha[2]:>8.1f}')                       #Comandos para definir espaçamentos. EX:<10 para 10 espaços a esquerda.
 while True:
     individual=int(input('Digite o código do aluno ou 999 para encerrar: '))
     if individual >= 0 and individual < 999 and individual < len(aluno):
         print('-'*30)
-        print(f'{aluno[individual][0]} - {aluno[individual][1]}')
+        print(f'{aluno[individual][0]} - {aluno[individual][1]}')              #Utilizando este metodo consigo inserir dentro da lista composta 'Aluno', o código do aluno que no caso se refere a posição do mesmo na lista aluno, e mostrando qual item na posição tal dentro desta lista usando [1] eu mostro que quero que o programa me devolva a primeira e segunda nota!
     elif individual >= len(aluno):
         print('-'*30)
         print('Aluno não cadastrado! TENTE NOVAMENTE')
