@@ -97,6 +97,8 @@
 
 
 #PRÁTICA DA AULA:
+
+
 #Exemplo 1:
 # def fatorial(num = 1):
 #     f = 1
@@ -107,6 +109,8 @@
 # f2 = fatorial(4)
 # f3 = fatorial()
 # print(f'Meus resultados foram | {f1} | {f2} | {f3} |')
+
+
 #Exemplo 2:
 # def par(n=0):
 #     if n % 2 == 0:
