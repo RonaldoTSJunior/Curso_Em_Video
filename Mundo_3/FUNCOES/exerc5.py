@@ -3,6 +3,8 @@
 from random import randint
 numeros = list()
 par = list()
+
+
 def sorteia():
     for repetidor in range(5):
         sorteio = randint(0,10)
@@ -10,8 +12,13 @@ def sorteia():
             par.append(sorteio)
         numeros.append(sorteio)
     print(f'Seus números sorteados são: {numeros}')
+    
+    
 def somaPar():
     soma = sum(par)
-    print(f'A soma dos números pares sorteados é: {soma}')
+    print(f'A soma dos números pares sorteados de {numeros} é: {soma}')
+    
+    
+#Programa Principal
 sorteia()
 somaPar()
